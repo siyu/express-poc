@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/nodemon/bin/nodemon.js src/app.js --exec 'npm run lint && node'",
-    "lint": "./node_modules/.bin/eslint **/*.js"
+    "start": "./node_modules/nodemon/bin/nodemon.js src/app.js"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +15,8 @@
     "eslint": "^4.11.0",
     "express": "^4.16.2",
     "morgan": "^1.9.0",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "pg": "^7.4.0"
   },
   "devDependencies": {
     "eslint-config-standard": "^10.2.1",

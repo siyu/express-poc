@@ -24,7 +24,7 @@ import AuthService from '@/services/AuthService'
 export default {
   data () {
     return {
-      email: 'abc',
+      email: 'abslkjfdslk',
       password: 'xes'
     }
   },

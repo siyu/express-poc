@@ -3,17 +3,26 @@ express-poc: vuejs/expressjs/nodejs proof of concept
 
 Instructions
 
-# setup client
+## install nodemon (auto node server restart)
+npm install nodemon -g
+
+## setup client
 cd client
 npm install
-# start client
+## start client
 npm run dev
+## URL
+http://localhost:8080/
 
-# setup server
+## setup server
 cd server
 npm install
-node ./node_modules/eslint/bin/eslint.js --init
-# start server
-npm start
+## start server
+option 1) from terminal: npm start
+option 2) from vs code: 
+  Setup: -> Debug -> Open Configuration -> launch.json -> Add Configuration -> Choose Nodemon Setup -> Update "program": "${workspaceFolder}/server/src/app.js"
+  Start: -> Debug -> Start Debugging
+## URL
+http://localhost:8081/
 
 
