@@ -1,36 +1,49 @@
-express-poc: vuejs/expressjs/nodejs proof of concept
+# express-poc: vuejs/expressjs/nodejs proof of concept
 
 
-Instructions
+### Instructions
 
-## install nodemon (auto node server restart)
+Install nodemon (auto node server restart)
+``` bash
 npm install nodemon -g
+```
 
-## setup client
+setup client
+``` bash
 cd client
 npm install
-## start client
-npm run dev
-## URL
-http://localhost:8080/
-## build for production
-npm run build (will generate all client code in dist folder)
+```
 
-## setup server
+start client
+``` bash
+npm run dev
+```
+
+URL: http://localhost:8080/
+
+build for production (will generate all client code in dist folder)
+``` bash
+npm run build 
+```
+
+setup server
+``` bash
 cd server
 npm install
-## start server
-option 1) from terminal: npm start
-option 2) from vs code: 
-  Setup: -> Debug -> Open Configuration -> launch.json -> Add Configuration -> Choose Nodemon Setup -> Update "program": "${workspaceFolder}/server/src/app.js"
-  Start: -> Debug -> Start Debugging
-## URL
-http://localhost:8081/
+```
+
+start server
+  - from terminal: npm start
+  - from vs code: 
+    - Setup: -> Debug -> Open Configuration -> launch.json -> Add Configuration -> Choose Nodemon Setup -> Update "program": "${workspaceFolder}/server/src/app.js"
+    - Start: -> Debug -> Start Debugging
+    
+URL: http://localhost:8081/
 
 
-## TODO
-extract route from app.js
-setup controllers
-setup models
-eploy to AWS
-database (connect, save, read, update, delete)
+### TODO
+- extract route from app.js
+- setup controllers
+- setup models
+- deploy to AWS
+- database (connect, save, read, update, delete)
