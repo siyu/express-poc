@@ -13,6 +13,8 @@ npm install
 npm run dev
 ## URL
 http://localhost:8080/
+## build for production
+npm run build (will generate all client code in dist folder)
 
 ## setup server
 cd server
@@ -26,3 +28,9 @@ option 2) from vs code:
 http://localhost:8081/
 
 
+## TODO
+extract route from app.js
+setup controllers
+setup models
+eploy to AWS
+database (connect, save, read, update, delete)
