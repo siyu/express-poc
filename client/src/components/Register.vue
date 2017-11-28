@@ -15,6 +15,8 @@
       placeholder="password" />
     <br>
     <button @click="register">Register</button>
+    <br>
+    <div v-html="message" />
   </div>
 </template>
 
@@ -25,7 +27,8 @@ export default {
   data () {
     return {
       email: 'abslkjfdslk',
-      password: 'xes'
+      password: 'xes',
+      message: null
     }
   },
   methods: {
@@ -36,6 +39,7 @@ export default {
         password: this.password
       })
       console.log(response.data)
+      this.message = response.data.message
     }
   }
 }

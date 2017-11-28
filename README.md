@@ -47,5 +47,6 @@ URL: http://localhost:8081/
 - extract route from app.js
 - setup controllers
 - setup models
+- front end to display server response data
 - deploy to AWS
 - database (connect, save, read, update, delete)
